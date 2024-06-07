@@ -1,4 +1,12 @@
-Для загрузки заготовленных новостей после применения миграций выполните команду:
-```bash
-python manage.py loaddata news.json
-```
+# django_sprint4
+python -m venv venv
+source venv/Scripts/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+python manage.py loaddata news.json 
+python manage.py createsuperuser
+python manage.py startapp core
